@@ -1,4 +1,4 @@
-# BioArgo_PAR
+# BioArgo_PAR_Reconstruction
 
 This is the code to reconstruct below surface PAR(z) using depth(z) and E_{d}(z) at four wavelengths, i.e., 380, 443, 490, and 555 nm. It employs a generalized additive model (GAM) with coefficients as functions of depth, i.e., PAR(z)= $\sum{f_i(z)*E_{di}}$.
 
