@@ -22,7 +22,7 @@ To run the code, simple do:
 ```
 python reconstruct_par.py
 ```
-The estimated PAR will be displayed on screen and a plot of measured/modeled PAR vs depth will be generated in the _example_ folder.
+The estimated PAR will be displayed on screen and a plot of measured/modeled PAR vs depth will be generated in the _example_ folder. Note that it may take a bit longer time to run the code for the first time after setting up the environement. After that it becomes fast.
 
 **Make sure to activate the gam environment before running the code**. Once processing is done, you can choose to deactivate the enviroment by:
 ```
