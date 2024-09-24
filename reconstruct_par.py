@@ -42,7 +42,7 @@ print(par_est)
 
 plt.figure(figsize=(5,4))
 plt.plot(d,par_est,'b',label='modeled')
-plt.fill_between(d,par_est-uncertainty,par_est+uncertainty,facecolor='r',alpha=0.2)
+plt.fill_between(d,par_est-uncertainty,par_est+uncertainty,facecolor='b',alpha=0.2)
 plt.plot(d,par,'r',label='measured')
 plt.xlabel('Depth, m',fontsize=14)
 plt.ylabel('PAR, mW/cm2/micron',fontsize=14)
