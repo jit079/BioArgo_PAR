@@ -194,7 +194,7 @@ def reconstruct_par(profile):
     return np.mean(par,1),e
 
 # read example data, 1st column - depth, 2nd - PAR (micro E/m2/s)
-# 3rd - 6th columns: Ed380 (mW/cm2/micron), Ed443 (mW/cm2/micron), Ed490 (mW/cm2/micron), Ed555 (mW/cm2/micron)
+# 3rd - 6th columns: Ed380 (mW/cm2/micron), Ed443 (mW/cm2/micron), Ed490 (mW/cm2/micron), Ed560 (mW/cm2/micron)
 
 df=read_csv('example/example_data.csv',skiprows=None)
 df=df.values
@@ -210,15 +210,15 @@ print(par_est)
 
 plt.figure(figsize=(10,4))
 plt.subplot(1,2,1)
-plt.plot(d,par_est,'b',label='modeled')
-plt.plot(d,par,'r',label='measured')
+plt.plot(d[np.argsort(d)],par_est[np.argsort(d)],'b',label='modeled')
+plt.plot(d[np.argsort(d)],par[np.argsort(d)],'r',label='measured')
 plt.xlabel('Depth, m',fontsize=14)
 plt.ylabel('PAR, '+r'$\mu$E/m$^{2}$/s',fontsize=14)
 plt.tick_params(labelsize=12)
 plt.yscale('log')
 plt.legend(fontsize=12)
 plt.subplot(1,2,2)
-plt.plot(d,uncertainty,'k')
+plt.plot(d[np.argsort(d)],uncertainty[np.argsort(d)],'k')
 plt.xlabel('Depth, m',fontsize=14)
 plt.ylabel(r'$\Delta$'+'PAR, '+r'$\mu$E/m$^{2}$/s',fontsize=14)
 plt.tick_params(labelsize=12)
