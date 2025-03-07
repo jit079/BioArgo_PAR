@@ -10,7 +10,7 @@ This is the code to reconstruct below surface PAR at different depth ${z}$, deno
 
 ## Usage
 
-To run the code, simple do:
+To run the code, simply do:
 
 ```
 python reconstruct_par.py
