@@ -16,6 +16,6 @@ To run the code, simple do:
 python reconstruct_par.py
 
 ```
-The estimated PAR will be displayed on screen and a plot of measured/modeled PAR vs depth will be generated in the _example_ folder. 
+The estimated PAR will be displayed on screen and a plot of measured/modeled PAR vs depth as well as uncertainty will be generated in the _example_ folder. 
 
 
