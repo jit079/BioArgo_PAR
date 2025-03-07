@@ -5,7 +5,7 @@ This is the code to reconstruct below surface PAR at different depth ${z}$, deno
 ## Files needed to run the program
 
 - _reconstruct_par.py_: the main code to read in $E_{d}(z)$ and z to generate estimated PAR and the associated uncertainty, using the example data.
-- _example_ folder: includes the example data file for demonstration (data from one profile measured by TriOS Rameses hyper-spectral radiometer).
+- _example_ folder: includes the example data file for demonstration (data from one profile measured by TriOS Ramses hyper-spectral radiometer).
 - _aux_ folder: includes _coeff.txt_ and _LUT_par_uncertainty.txt_.
 
 ## Usage
