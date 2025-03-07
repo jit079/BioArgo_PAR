@@ -17,7 +17,7 @@ conda activate gam
 ```
 ## Usage
 
-To run the code, simple do:
+To run the code, simply do:
 
 ```
 python reconstruct_par.py
