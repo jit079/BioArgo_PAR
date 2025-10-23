@@ -155,7 +155,7 @@ def calc_uncertainty(d,par):
     
         j1=np.where(toohigh,j1-1,j1)
     
-        j2=np.where(toolow,j1,i1-1)
+        j2=np.where(toolow,j1,j1-1)
     
         e2=rms[idx2,j2]     
     
